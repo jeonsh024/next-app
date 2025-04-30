@@ -59,22 +59,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## vscode EXTENTIONS
 
-ES7+ React/Redux/React-Native snippets
-Prettier - Code formatter
-Tailwind CSS IntelliSense
-TypeScript Extension Pack
-Path Intellisense
-Import Cost
-DotENV
+- ES7+ React/Redux/React-Native snippets
+- Prettier - Code formatter
+- Tailwind CSS IntelliSense
+- TypeScript Extension Pack
+- Path Intellisense
+- Import Cost
+- DotENV
 
-Auto Rename Tag
-Auto Complete Tag
-Auto Close Tag
-GitLens
-Code Spell Checker
+- Auto Rename Tag
+- Auto Complete Tag
+- Auto Close Tag
+- GitLens
+- Code Spell Checker
 
-Beautify css/sass/scss/less
-Material Icon Theme
-Sass
+- Beautify css/sass/scss/less
+- Material Icon Theme
+- Sass
 
-REST Client // 필요시
+- REST Client // 필요시
