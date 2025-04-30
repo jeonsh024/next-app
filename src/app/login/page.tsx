@@ -9,7 +9,11 @@ export default function LoginPage() {
   const handleLogin = async () => {
     if (!id || !password) {
       alert("아이디와 비밀번호를 모두 입력해주세요.");
-      return;
+      return  ;
+    
+    
+     
+    
     }
 
     try {
@@ -41,6 +45,7 @@ export default function LoginPage() {
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
+          <div>sdsdsdsdsdsdsdsdsdsdsdsdsd</div>
         </div>
 
         <Button className="w-full mt-2" onClick={handleLogin}>
