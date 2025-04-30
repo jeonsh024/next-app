@@ -23,4 +23,6 @@ dev.db-journal
 # Prisma migrations (선택)
 prisma/migrations/
 
+# Custom Git Ignores
 auto-imports.d.ts
+.vscode/

@@ -1,30 +1,26 @@
-"use client";
+'use client';
 
-import { Input, Button } from "@/components/ui";
+import { Input, Button } from '@/components/ui';
 
 export default function LoginPage() {
-  const [id, setId] = useState("");
-  const [password, setPassword] = useState("");
+  const [id, setId] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
     if (!id || !password) {
-      alert("아이디와 비밀번호를 모두 입력해주세요.");
-      return  ;
-    
-    
-     
-    
+      alert('아이디와 비밀번호를 모두 입력해주세요.');
+      return;
     }
 
     try {
       // 로그인 요청: API 연동 필요시 여기에 axios 요청 추가
-      console.log("로그인 시도:", { id, password });
+      console.log('로그인 시도:', { id, password });
 
       // 예: localStorage.setItem('token', res.data.token)
       alert(`환영합니다, ${id}님!`);
     } catch (error) {
-      console.error("로그인 실패:", error);
-      alert("로그인에 실패했습니다.");
+      console.error('로그인 실패:', error);
+      alert('로그인에 실패했습니다.');
     }
   };
 
@@ -37,15 +33,25 @@ export default function LoginPage() {
           <Input
             placeholder="아이디"
             value={id}
-            onChange={e => setId(e.target.value)}
+            onChange={(e) => setId(e.target.value)}
           />
           <Input
             placeholder="비밀번호"
             type="password"
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
-          <div>sdsdsdsdsdsdsdsdsdsdsdsdsd</div>
+          <div>cㅇtest</div>
+          <div>
+            sfdsdffds ddds
+            <button
+              type="button"
+              className="order test mt-2 pa-4"
+              onClick={handleLogin}
+            >
+              test
+            </button>
+          </div>
         </div>
 
         <Button className="w-full mt-2" onClick={handleLogin}>
