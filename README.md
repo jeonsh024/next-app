@@ -20,6 +20,29 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+> ## Node Version (필수)
+
+- node 20.19.1 버전 사용
+- 다른 버전의 경우 install 에러가 날 수 있습니다.
+
+## 서버 세팅
+
+npx prisma migrate dev --name init
+
+## 데이터 확인
+
+npx prisma studio
+
+
+## 🧩 UI 컴포넌트 (shadcn/ui) 설치 및 사용 방법
+
+이 프로젝트는 [shadcn/ui](https://ui.shadcn.com/) 기반의 UI 컴포넌트를 사용합니다.  
+새로운 컴포넌트를 추가하려면 다음 명령어를 사용하세요.
+
+### ✅ 컴포넌트 추가 명령어
+
+pnpm dlx shadcn-ui@latest add button
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

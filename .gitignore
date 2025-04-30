@@ -1,0 +1,26 @@
+# Next.js
+.next/
+out/
+node_modules/
+
+# Env
+.env.local
+.env*
+
+# Prisma
+dev.db
+dev.db-journal
+prisma/migrations/
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+
+# Prisma SQLite database
+dev.db
+dev.db-journal
+
+# Prisma migrations (선택)
+prisma/migrations/
+
+auto-imports.d.ts

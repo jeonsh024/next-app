@@ -17,3 +17,11 @@ export async function createProduct(formData: FormData) {
   // 저장 후 리스트 새로고침
   revalidatePath("/products");
 }
+
+export async function deleteProduct(id: number) {
+  await prisma.product.delete({
+    where: { id },
+  });
+
+  revalidatePath("/products"); // 캐시 무효화 → 자동 갱신
+}
