@@ -1,12 +1,12 @@
-import { createProduct, deleteProduct } from "./actions";
-import { prisma } from "@/lib/prisma";
-import { Input, Button } from "@/components/ui";
-import { CommonConfirmButton } from "@/components/common/button/CommonConfirmButton";
-import { Trash2 } from "lucide-react";
+import { createProduct, deleteProduct } from './actions';
+import { prisma } from '@/lib/prisma';
+import { Input, Button } from '@/components/ui';
+import { CommonConfirmButton } from '@/components/common/button/CommonConfirmButton';
+import { Trash2 } from 'lucide-react';
 
 async function getProducts() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products`, {
-    cache: "no-store",
+    cache: 'no-store',
   });
   return res.json();
 }
@@ -40,7 +40,7 @@ export default async function ProductsPage() {
             • {p.name}
             <form
               action={async () => {
-                "use server";
+                'use server';
                 await deleteProduct(p.id);
               }}
             >
@@ -49,7 +49,7 @@ export default async function ProductsPage() {
                 confirmText="삭제"
                 cancelText="취소"
                 onConfirm={async () => {
-                  "use server";
+                  'use server';
                   await deleteProduct(p.id);
                 }}
               >

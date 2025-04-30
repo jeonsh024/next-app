@@ -33,7 +33,6 @@ npx prisma migrate dev --name init
 
 npx prisma studio
 
-
 ## 🧩 UI 컴포넌트 (shadcn/ui) 설치 및 사용 방법
 
 이 프로젝트는 [shadcn/ui](https://ui.shadcn.com/) 기반의 UI 컴포넌트를 사용합니다.  
@@ -57,3 +56,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## vscode EXTENTIONS
+
+ES7+ React/Redux/React-Native snippets
+Prettier - Code formatter
+Tailwind CSS IntelliSense
+TypeScript Extension Pack
+Path Intellisense
+Import Cost
+DotENV
+
+Auto Rename Tag
+Auto Complete Tag
+Auto Close Tag
+GitLens
+Code Spell Checker
+
+Beautify css/sass/scss/less
+Material Icon Theme
+Sass
+
+REST Client // 필요시
